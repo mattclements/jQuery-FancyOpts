@@ -160,7 +160,8 @@ $*/
               type = $this.attr('type'),
               name = $this.attr('name'),
               width = settings.width,
-              height = settings.height
+              height = settings.height,
+			  hasOutline = settings.hasOutline
           ;
           
           if (!id) {
@@ -300,7 +301,7 @@ $*/
         var data = $(this).data('fancyopts');
 
         if (focused) {
-			if(hasOutline) {
+			if(data.hasOutline) {
           	  	$('.fancyopts-icon').css({outline:'0'});
           		data.icon.css({outline:'1px dotted'});
 	 	 	}
@@ -315,7 +316,7 @@ $*/
           return false;
         }
 		
-        if(hasOutline)
+        if(data.hasOutline)
         	data.icon.css({outline:'0'});
         
         if (nocb)
