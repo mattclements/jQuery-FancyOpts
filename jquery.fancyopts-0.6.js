@@ -1,6 +1,6 @@
 /**
  * v0.6 Fancy Opts plugin for jQuery
- * http://mattclements/jquery/fancyopts
+ * https://github.com/mattclements/jQuery-FancyOpts
  *
  * Author(s): Rommel Santor
  *            http://rommelsantor.com
